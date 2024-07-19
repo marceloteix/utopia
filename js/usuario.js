@@ -19,58 +19,62 @@ if (loggedInUser) {
     }
 }
 
-// Função para renderizar itens emprestados
+// Função para renderizar itens emprestados com atraso
 function renderizarItensEmprestados() {
-    var itensEmprestados = JSON.parse(localStorage.getItem('itensEmprestados')) || [];
+    setTimeout(function() {
+        var itensEmprestados = JSON.parse(localStorage.getItem('itensEmprestados')) || [];
 
-    if (itensEmprestados.length > 0) {
-        itensEmprestados.forEach(function (item) {
-            var itemDiv = `
-            <li class="item-content">
-                <div class="item-media">
-                    <img src="${item.imagem}" width="120">
-                </div>
-                <div class="item-inner">
-                    <div class="item-title">${item.nome}</div>
-                    <div class="item-subtitle">Emprestado por: ${item.nomeCompleto}</div>
-                    <div class="item-text">Até: ${item.data}</div>
-                    <div class="item-action">
-                        <button class="devolver-btn" data-id="${item.id}">Devolver</button>
-                        <button class="sobguarda-btn" data-id="${item.id}">${item.sobGuarda ? 'Sob Guarda' : 'Marcar como Sob Guarda'}</button>
+        if (itensEmprestados.length > 0) {
+            itensEmprestados.forEach(function (item) {
+                var itemDiv = `
+                <li class="item-content">
+                    <div class="item-media">
+                        <img src="${item.imagem}" width="120">
                     </div>
+                    <div class="item-inner">
+                        <div class="item-title">${item.nome}</div>
+                        <div class="item-subtitle">Emprestado por: ${item.nomeCompleto}</div>
+                        <div class="item-text">Até: ${item.data}</div>
+                        <div class="item-action">
+                            <button class="devolver-btn" data-id="${item.id}">Devolver</button>
+                            <button class="sobguarda-btn" data-id="${item.id}">${item.sobGuarda ? 'Sob Guarda' : 'Marcar como Sob Guarda'}</button>
+                        </div>
+                    </div>
+                </li>
+                `;
+                document.getElementById('alugados-list').insertAdjacentHTML('beforeend', itemDiv);
+            });
+        } else {
+            document.getElementById('alugados-list').innerHTML = '<li class="item-content"><div class="item-inner"><div class="item-title">Nenhum item emprestado.</div></div></li>';
+        }
+    }, 500); // Adiciona um atraso de 500 milissegundos antes de executar a função
+}
+
+// Função para carregar os itens alugados com atraso
+function carregarItensAlugados() {
+    setTimeout(function() {
+        const alugadosList = document.getElementById('alugados-list');
+        const alugados = JSON.parse(localStorage.getItem('itensAlugados')) || [];
+        alugadosList.innerHTML = '';
+
+        alugados.forEach(item => {
+            const itemHTML = `
+            <li class="item">
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title">${item.nome}</div>
+                        <div class="item-subtitle">${item.devolucao ? `Devolução: ${item.devolucao}` : 'Sob Guarda'}</div>
+                    </div>
+                </div>
+                <div class="item-action">
+                    <button class="devolver-btn" data-id="${item.id}">Devolver</button>
+                    <button class="sobguarda-btn" data-id="${item.id}">${item.sobGuarda ? 'Sob Guarda' : 'Marcar como Sob Guarda'}</button>
                 </div>
             </li>
             `;
-            document.getElementById('alugados-list').insertAdjacentHTML('beforeend', itemDiv);
+            alugadosList.insertAdjacentHTML('beforeend', itemHTML);
         });
-    } else {
-        document.getElementById('alugados-list').innerHTML = '<li class="item-content"><div class="item-inner"><div class="item-title">Nenhum item emprestado.</div></div></li>';
-    }
-}
-
-// Função para carregar os itens alugados do localStorage
-function carregarItensAlugados() {
-    const alugadosList = document.getElementById('alugados-list');
-    const alugados = JSON.parse(localStorage.getItem('itensAlugados')) || [];
-    alugadosList.innerHTML = '';
-
-    alugados.forEach(item => {
-        const itemHTML = `
-        <li class="item">
-            <div class="item-content">
-                <div class="item-inner">
-                    <div class="item-title">${item.nome}</div>
-                    <div class="item-subtitle">${item.devolucao ? `Devolução: ${item.devolucao}` : 'Sob Guarda'}</div>
-                </div>
-            </div>
-            <div class="item-action">
-                <button class="devolver-btn" data-id="${item.id}">Devolver</button>
-                <button class="sobguarda-btn" data-id="${item.id}">${item.sobGuarda ? 'Sob Guarda' : 'Marcar como Sob Guarda'}</button>
-            </div>
-        </li>
-        `;
-        alugadosList.insertAdjacentHTML('beforeend', itemHTML);
-    });
+    }, 500); // Adiciona um atraso de 500 milissegundos antes de executar a função
 }
 
 // Função para marcar um item como "Sob Guarda" ou "Devolver"
@@ -110,7 +114,7 @@ carregarItensAlugados();
 // Adicionar ouvintes de eventos aos botões
 document.getElementById('alugados-list').addEventListener('click', handleItemAction);
 
-// Renderizar itens emprestados
+// Renderizar itens emprestados com atraso
 renderizarItensEmprestados();
 
 // Estilização
@@ -202,3 +206,4 @@ h2 {
 }
 `;
 document.head.appendChild(style);
+
