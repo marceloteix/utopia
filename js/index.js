@@ -6,7 +6,7 @@ function verificarLogin() {
         if (window.location.pathname !== '/login.html') {
             setTimeout(function() {
                 window.location.href = 'login.html'; // Atualize o caminho se necessário
-            }, 100); // Adiciona um pequeno atraso antes do redirecionamento
+            }, 10000); // Adiciona um pequeno atraso antes do redirecionamento
             return false; // Impede a execução do restante do código se o redirecionamento ocorrer
         }
     }
