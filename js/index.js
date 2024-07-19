@@ -5,14 +5,14 @@ function verificarLogin() {
         // Redirecionar para a página de login se o usuário não estiver logado
         if (window.location.pathname !== '/login.html') {
             window.location.href = 'login.html'; // Atualize o caminho se necessário
+            return false; // Impede a execução do restante do código se o redirecionamento ocorrer
         }
     }
+    return true; // Retorna true se o usuário estiver logado
 }
 
 // Verificar login antes de carregar os dados dos produtos
-verificarLogin();
-
-if (JSON.parse(localStorage.getItem('loggedInUser'))) {
+if (verificarLogin()) {
     fetch('js/backend.json')
         .then(response => response.json())
         .then(data => {
@@ -35,6 +35,7 @@ if (JSON.parse(localStorage.getItem('loggedInUser'))) {
                             </div>
                             <div class="nome-rating">
                                 <span class="color-black">${produto.nome}</span>
+                            </div>
                         </a>
                     </div>
                     `;
