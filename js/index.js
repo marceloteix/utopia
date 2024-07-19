@@ -4,7 +4,11 @@ function verificarLogin() {
     if (!loggedInUser) {
         // Redirecionar para a página de login se o usuário não estiver logado
         if (window.location.pathname !== '/login.html') {
-            window.location.href = 'login.html'; // Atualize o caminho se necessário
+            console.log('Usuário não está logado. Redirecionando para a página de login.');
+            // Adiciona um pequeno atraso para garantir que o login possa ser processado
+            setTimeout(() => {
+                window.location.href = 'login.html'; // Atualize o caminho se necessário
+            }, 100);
         }
     }
 }
@@ -12,9 +16,17 @@ function verificarLogin() {
 // Verificar login antes de carregar os dados dos produtos
 verificarLogin();
 
-if (JSON.parse(localStorage.getItem('loggedInUser'))) {
-   fetch('js/backend.json')
-        .then(response => response.json())
+// Verificar login novamente antes de prosseguir com o fetch
+var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+if (loggedInUser) {
+    // Fazer fetch dos dados
+    fetch('js/backend.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             // SALVAR OS DADOS VINDO DO BACKEND LOCALMENTE
             localStorage.setItem('produtos', JSON.stringify(data));
