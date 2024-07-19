@@ -1,4 +1,18 @@
+// Função para verificar se o usuário está logado
+function verificarLogin() {
+    var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (!loggedInUser) {
+        // Redirecionar para a página de login se o usuário não estiver logado
+        if (window.location.pathname !== '/login.html') {
+            window.location.href = 'login.html'; // Atualize o caminho se necessário
+        }
+    }
+}
 
+// Verificar login antes de carregar os dados dos produtos
+verificarLogin();
+
+if (JSON.parse(localStorage.getItem('loggedInUser'))) {
    fetch('js/backend.json')
         .then(response => response.json())
         .then(data => {
@@ -45,5 +59,6 @@
         // Alimentar o contador da sacola
         $('.btn-cart').attr('data-count', carrinho.length);
     }, 300);
+}
 
 
