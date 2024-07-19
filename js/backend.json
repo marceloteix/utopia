@@ -1,0 +1,376 @@
+[
+    {
+        "id": 1,
+        "imagem": "img/canon.png",
+        "nome": "Câmera",
+        "principal_caracteristica": "Branco",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 2,
+        "imagem": "img/microfone.jpg",
+        "nome": "Microfone",
+        "principal_caracteristica": "--",
+        "rating": 3.8,
+        "likes": "94%",
+        "reviews": 15,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 3,
+        "imagem": "img/bolsa.jpg",
+        "nome": "Bolsa para câmera",
+        "principal_caracteristica": "1 TB",
+        "rating": 4.5,
+        "likes": "96%",
+        "reviews": 25,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 4,
+        "imagem": "img/iluminador.png",
+        "nome": "Iluminador Led",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 5,
+        "imagem": "img/default.png",
+        "nome": "Mini Tripé",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 6,
+        "imagem": "img/vap.jpg",
+        "nome": "Lavadora de alta pressão VAP",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 7,
+        "imagem": "img/parafusadeira.jpg",
+        "nome": "Parafusadeira Bosch com caixa e bateria",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 8,
+        "imagem": "img/bateria.webp",
+        "nome": "Bateria de lítio extra para parafusadeira",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 9,
+        "imagem": "img/notebook.jpg",
+        "nome": "Notebook Lenovo 8gb",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    }, 
+    {
+        "id": 10,
+        "imagem": "img/impressora.jpg",
+        "nome": "Impressora Laser Preto e Branco HP",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 11,
+        "imagem": "img/default.png",
+        "nome": "Mesa Dobrável 1",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 12,
+        "imagem": "img/default.png",
+        "nome": "Mesa Dobrável 2",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+       "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 13,
+        "imagem": "img/default.png",
+        "nome": "Mesa Dobrável 3",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 14,
+        "imagem": "img/default.png",
+        "nome": "Mesa Dobrável 4",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 15,
+        "imagem": "img/default.png",
+        "nome": "Panelão Inox 100 litros",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 16,
+        "imagem": "img/default.png",
+        "nome": "Bicicleta sem marcha com cestinho",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 17,
+        "imagem": "img/default.png",
+        "nome": "Bicicleta elétrica 1",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 17,
+        "imagem": "img/default.png",
+        "nome": "Bicicleta elétrica 2",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+"descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 18,
+        "imagem": "img/default.png",
+        "nome": "Impressora Colorida Epson L3210",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 19,
+        "imagem": "img/default.png",
+        "nome": "Bicicleta Caloi Convencional",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 20,
+        "imagem": "img/default.png",
+        "nome": "Projetor Multimidia Tomate",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    },
+    {
+        "id": 21,
+        "imagem": "img/default.png",
+        "nome": "Caixa de som portátil Xiaomi",
+        "principal_caracteristica": "512 GB 16GB RAM",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "INCLUIR TERMO DE EMPRÉSTIMO",
+        "detalhes": [
+            {
+                "X": "X",
+                "Y": "Y"
+            }
+        ],
+        "preco": 99.99
+    }
+]
