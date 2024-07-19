@@ -4,13 +4,9 @@ function verificarLogin() {
     if (!loggedInUser) {
         // Redirecionar para a página de login se o usuário não estiver logado
         if (window.location.pathname !== '/login.html') {
-            setTimeout(function() {
-                window.location.href = 'login.html'; // Atualize o caminho se necessário
-            }, 10000); // Adiciona um pequeno atraso antes do redirecionamento
-            return false; // Impede a execução do restante do código se o redirecionamento ocorrer
+            window.location.href = 'login.html'; // Atualize o caminho se necessário
         }
     }
-    return true; // Retorna true se o usuário estiver logado
 }
 
 // Verificar login antes de carregar os dados dos produtos
